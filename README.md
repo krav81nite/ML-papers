@@ -51,7 +51,7 @@ A progress tracker is also included for each paper.
 
 All scientific references for this repository are maintained in:
 
-📌 [`bibliography.bib`](bibliography.bib)
+📌 [`bibliography.bib`](papers/bibliography.bib)
 
 You can easily cite these resources in your academic writing.
 
