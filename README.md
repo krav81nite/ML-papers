@@ -1,22 +1,49 @@
 # ML-papers
+# 📚 Research Paper Repository — CAST Project
 
-Papers uploaded.
+This repository collects and organizes scientific papers that support the CAST
+(Charging Availability Sequence Transformer) research project.  
+Papers are organized into two core categories:
 
-2501.19065v2 - BEAT: Balanced Frequency Adaptive Tuning for Long-Term Time-Series Forecasting
+- ✅ Generic Papers → Technical foundations (Deep Learning for sequence modeling)
+- ✅ Focused Papers → Applications to EV charging forecasting
 
-louie2017 - Time-Series Modeling of Aggregated Electric Vehicle Charging Station Load
+A progress tracker is also included for each paper.
 
-2502.16365v1 - Demand Forecasting for Electric Vehicle Charging Stations using Multivariate Time-Series Analysis
+---
 
-1912.09363v3 - Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting
+## 🔹 Generic Papers (Technical Foundations)
 
-1409.3215v3 - Sequence to Sequence Learning with Neural Networks
+| Paper | Topic | Status |
+|-------|-------|:-----:|
+| [Attention Is All You Need (2017)](generic/Attention_Is_All_You_Need_2017.md) | Transformer Encoder-Decoder | ⬜ |
+| [Temporal Fusion Transformers (2020)](generic/Temporal_Fusion_Transformers_TFT_2020.md) | Context-aware forecasting | ⬜ |
+| [Balanced Frequency Adaptive Tuning — BEAT (2025)](generic/Balanced_Frequency_Adaptive_Tuning_BEAT_2025.md) | Long-term TS forecasting | ⬜ |
+| [Sequence-to-Sequence Learning (2014)](generic/Sequence_to_Sequence_Learning_Sutskever2014.md) | Seq2Seq architecture | ⬜ |
+| [Long Short-Term Memory (1997)](generic/Long_Short_Term_Memory_1997.md) | RNN variant for long memory | ⬜ |
+| [Informer (2020)](generic/Informer_Long_Sequence_TimeSeries_Forecasting_2020.md) | Efficient TS Transformer | ⬜ |
 
-2604 - Long Short-Term Memory
+---
 
-1706.03762v7 - Attention Is All You Need
+## 🔹 Focused Papers (EV Charging Forecasting)
 
-2012.07436v3 - Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
+| Paper | Topic | Status |
+|-------|-------|:-----:|
+| [Time-Series Modeling of Aggregated EV Charging Load (2017)](focused/TimeSeries_Modeling_Aggregated_EV_Charging_Load_Louie2017.md) | EV charging load modeling | ⬜ |
+| [Demand Forecasting for EV Charging Stations using Multivariate TS (2025)](focused/Demand_Forecasting_EV_Charging_Stations_MultivariateTS_2025.md) | Multivariate TS for charging demand | ⬜ |
+| [EV Charging Station Demand Forecasting using LSTM-Based Hybrid Transformer (2025)](focused/Charging_Stations_Demand_Forecasting_LSTM_Hybrid_Transformer_2025.md) | Hybrid model for station demand | ⬜ |
 
-s41598-025-20421-y - Charging stations demand forecasting using LSTM based hybrid transformer model
+---
 
+📌 **Legend for Status column**  
+⬜ Not started | 🔄 Reading / notes in progress | ✅ Completed
+
+---
+
+> ✨ When writing the final report, this structure allows quick reference
+> for the State-of-the-Art chapter and citations.
+
+---
+
+📝 All citations are stored in:  
+📌 `bibliography.bib`
