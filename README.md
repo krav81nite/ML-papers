@@ -45,5 +45,21 @@ A progress tracker is also included for each paper.
 
 ---
 
-📝 All citations are stored in:  
-📌 `bibliography.bib`
+---
+
+## 📚 Bibliography Management
+
+All scientific references for this repository are maintained in:
+
+📌 [`bibliography.bib`](bibliography.bib)
+
+You can easily cite these resources in your academic writing.
+
+### ▶️ How to use with LaTeX
+
+Include in your main `.tex` file:
+
+```latex
+\bibliographystyle{plain}
+\bibliography{papers/bibliography}
+
