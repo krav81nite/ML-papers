@@ -72,17 +72,44 @@ All scientific references for this repository are maintained in:
 
 ### ✅ Main Conclusions
 
-- Classical models (e.g., ARIMA) **fail** under **high usage variability**
-- Deep learning (LSTM) **significantly improves** short-term predictions
-- Transformative architectures (Hybrid/Attention-based) provide:
-  ✅ Better **multi-step/horizon** forecasts  
-  ✅ Ability to capture **long-range patterns**  
-  ✅ Stronger handling of **non-linear** EV usage behavior  
-- Spatial and contextual features are **important performance drivers**
+The reviewed literature on forecasting in EV charging infrastructure reveals three clear stages of evolution:
 
-📌 These results justify using:
-🚀 **Transformer-based deep learning**  
-to predict **EV charger availability** in CAST.
+1️⃣ **Classical time-series and ML methods**  
+(e.g., ARIMA, Logistic Regression, Random Forest)  
+→ Perform reasonably well during predictable periods, but struggle with peak-time volatility and long-horizon behavior.
+
+2️⃣ **Deep learning-based forecasting**  
+(e.g., LSTM, CNN fusion)  
+→ Superior for nonlinear and spatial-temporal EV usage patterns, especially in urban and multi-station contexts.
+
+3️⃣ **Deployment-aware architectures**  
+(e.g., Federated Deep Learning)  
+→ Address privacy, heterogeneous data sources, and real-world multi-operator constraints.
+
+---
+
+#### ✅ Gap identified in the state-of-the-art
+
+While some papers perform **binary occupancy forecasting** (Occupied vs Free), existing models:
+
+- ❌ Rarely model **sequential temporal dependency** across multiple future steps  
+- ❌ Provide limited interpretability for operational decision-making  
+- ❌ Lack unified modeling across **multiple stations** and horizons  
+- ❌ Focus primarily on **short-term** (< 30 min) forecasts  
+
+---
+
+### 🚀 CAST — Charging Availability Sequence Transformer
+
+To address these gaps, **CAST** aims to:
+
+✅ Predict **charging availability state** (binary/multiclass)  
+✅ Across **multiple horizons** (short to mid-term)  
+✅ Using **advanced sequential modeling** (Transformers)  
+✅ Allow inclusion of **contextual features** (temporal, spatial, operational)  
+
+📌 This positions CAST as a **novel and relevant** contribution to forecasting in EV charging infrastructure.
+
 
 
 
