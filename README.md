@@ -53,13 +53,34 @@ All scientific references for this repository are maintained in:
 
 📌 [`bibliography.bib`](papers/bibliography.bib)
 
-You can easily cite these resources in your academic writing.
+---
 
-### ▶️ How to use with LaTeX
+## 📊 Focused Papers — Comparative Summary
 
-Include in your main `.tex` file:
+| Paper | Forecast Target | Dataset Type | Models Compared | Best Performing Model | Metrics | Key Challenge | Relevance to CAST |
+|-------|----------------|--------------|----------------|----------------------|---------|---------------|------------------|
+| Louie et al. (2017) | Aggregated Load | Real-world EV station load | ARIMA; Regression | ARIMA (off-peak) | RMSE, MAPE | Peak variability increases error | Shows baseline predictability of demand |
+| Zhang et al. (2025) | Multi-variate Demand | Real charging + external features | LSTM; SVR; ARIMA | ⭐ LSTM | RMSE, MAPE, MAE | Volatility during peak periods | Highlights need for external contextual data |
+| Kanters et al. (2025) | Demand Forecasting | Spatial-temporal real datasets | LSTM; ARIMA; Hybrid Transformer | ⭐ Hybrid Transformer–LSTM | RMSE, MAPE, MAE | Capturing long-term seasonal shifts | Attention + DL improves operational accuracy |
 
-```latex
-\bibliographystyle{plain}
-\bibliography{papers/bibliography}
+---
+
+### ✅ Main Conclusions
+
+- Classical models (e.g., ARIMA) **fail** under **high usage variability**
+- Deep learning (LSTM) **significantly improves** short-term predictions
+- Transformative architectures (Hybrid/Attention-based) provide:
+  ✅ Better **multi-step/horizon** forecasts  
+  ✅ Ability to capture **long-range patterns**  
+  ✅ Stronger handling of **non-linear** EV usage behavior  
+- Spatial and contextual features are **important performance drivers**
+
+📌 These results justify using:
+🚀 **Transformer-based deep learning**  
+to predict **EV charger availability** in CAST.
+
+
+
+
+
 
