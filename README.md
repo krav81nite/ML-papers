@@ -57,11 +57,16 @@ All scientific references for this repository are maintained in:
 
 ## 📊 Focused Papers — Comparative Summary
 
-| Paper | Forecast Target | Dataset Type | Models Compared | Best Performing Model | Metrics | Key Challenge | Relevance to CAST |
-|-------|----------------|--------------|----------------|----------------------|---------|---------------|------------------|
-| Louie et al. (2017) | Aggregated Load | Real-world EV station load | ARIMA; Regression | ARIMA (off-peak) | RMSE, MAPE | Peak variability increases error | Shows baseline predictability of demand |
-| Zhang et al. (2025) | Multi-variate Demand | Real charging + external features | LSTM; SVR; ARIMA | ⭐ LSTM | RMSE, MAPE, MAE | Volatility during peak periods | Highlights need for external contextual data |
-| Kanters et al. (2025) | Demand Forecasting | Spatial-temporal real datasets | LSTM; ARIMA; Hybrid Transformer | ⭐ Hybrid Transformer–LSTM | RMSE, MAPE, MAE | Capturing long-term seasonal shifts | Attention + DL improves operational accuracy |
+| Paper | Forecast Target | Dataset Type | ML Approach | Best Model | Metrics | Horizon | Key Challenge | Relevance to CAST |
+|-------|----------------|--------------|-------------|------------|---------|---------|----------------|------------------|
+| Louie et al. (2017) | Aggregated Load | Real-world EVCS | Classical TS | ARIMA (off-peak) | RMSE, MAPE | Short | High peak variance | Motivates deep methods |
+| Zhang et al. (2025) | Load (multivariate) | Real EVCS + Weather | DL (LSTM) | LSTM | RMSE, MAPE, MAE | Short | Nonlinear seasonal effects | Supports exogenous features |
+| Kanters et al. (2025) | Demand (station) | Multi-station | Hybrid (LSTM+Transformer) | Hybrid | RMSE, MAPE, MAE | Short-Mid | Long-term patterns | Attention improves results |
+| Soldan et al. (2021) | Occupancy (binary) | Real EVCS logs | ML (Streaming) | RF | Accuracy, F1 | 5–30 min | Horizon worsens classifiers | Baseline for CAST classifier |
+| Ostermann et al. (2022) | Charging point status | Public charging infra | Classical ML | XGBoost | Accuracy, Precision, Recall | <30 min | Daily cycles | Feature engineering matters |
+| Sao et al. (2021) | Occupancy (binary) | Spatial-temporal | DL (Fusion) | Deep Fusion CNN | Accuracy, F1 | Short | Spatial dynamics | Multi-station modeling justified |
+| Douaidi et al. (2025) | Occupancy (binary) | Multi-operator | Federated DL | FedAvg Hybrid | Accuracy, Precision, Recall | Short | Privacy + heterogeneity | Future CAST deployment scenario |
+
 
 ---
 
