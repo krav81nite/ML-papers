@@ -71,6 +71,22 @@ Data shows:
 
 ---
 
+## 📊 Metrics & Results Summary
+
+| Model | RMSE ↓ | MAPE ↓ | MAE ↓ | Observation |
+|-------|--------|--------|-------|-------------|
+| LSTM | ⭐ Best | ⭐ Best | ⭐ Best | Captures nonlinear + seasonal patterns |
+| SVR | Medium | Medium | Medium | Limited handling of dynamic variation |
+| ARIMA | Weak | Weak | Weak | Poor performance during high volatility |
+
+Key insights:
+- LSTM provides **significant improvements** vs. classical models
+- Errors increase during **high-demand peak periods**
+- Exogenous features (weather, events) **improve forecasting accuracy**
+- Clear weekly and hourly **seasonal patterns**
+
+---
+
 ## 🤝 Relevance to CAST Project
 ✔ Most similar approach to your domain so far ✅  
 ✔ Motivates using **exogenous features** no teu modelo  
