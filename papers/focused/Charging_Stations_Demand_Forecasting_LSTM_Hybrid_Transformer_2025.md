@@ -81,6 +81,21 @@ Insights:
 
 ---
 
+## 📊 Metrics & Results Summary
+
+| Model | RMSE ↓ | MAPE ↓ | MAE ↓ | Observation |
+|-------|--------|--------|-------|-------------|
+| Hybrid Transformer–LSTM | ⭐ Best | ⭐ Best | ⭐ Best | Captures long-range + local dynamics; most robust at multi-step horizons |
+| LSTM (standalone) | Medium | Medium | Medium | Good short-term memory; weaker for long seasonal effects |
+| ARIMA / Classical | Weak | Weak | Weak | Struggles during peak hours and regime shifts |
+
+Key insights:
+- Attention layers **improve long-horizon accuracy** over LSTM-only
+- Performance degrades slightly in **high-variance peak periods**, but still superior to baselines
+- Spatial/context features materially **boost** results (e.g., station/location effects)
+
+---
+
 ## 🤝 Relevance to CAST Project
 ⭐⭐⭐ ALTAMENTE RELEVANTE ⭐⭐⭐
 
