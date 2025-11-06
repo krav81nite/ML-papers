@@ -53,7 +53,7 @@ Data shows:
 - Lower performance during:
   - High variation peak periods
 
-⚡ The conclusion realça a necessidade de **modelos mais avançados** para lidar com picos de procura.
+⚡ The conclusion highlights the need for more advanced models to handle peak demand.
 
 ---
 
