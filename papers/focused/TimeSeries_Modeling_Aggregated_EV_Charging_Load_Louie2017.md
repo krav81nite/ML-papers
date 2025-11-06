@@ -66,6 +66,21 @@ Graphical results show:
 
 ---
 
+## 📊 Metrics & Results Summary
+
+| Model | RMSE ↓ | MAPE ↓ | Observation |
+|-------|--------|--------|-------------|
+| ARIMA (Seasonal) | Good in off-peak | Good in off-peak | Stable behavior in predictable hours |
+| ARIMA (Peak hours) | Higher | Higher | Model struggles during variability spikes |
+| Regression baselines | Weaker | Weaker | Cannot capture seasonal effects |
+
+Key insights:
+- Classical models handle **smooth load profiles**
+- Sudden variations in demand → **error increases significantly**
+- Weekly and daily seasonality patterns are dominant drivers
+
+---
+
 ## 🤝 Relevance to CAST Project
 ✔ Supports motivation: **charging demand is predictable but nonlinear**  
 ✔ Shows need for **deep learning** for peak-hour accuracy  
